@@ -169,7 +169,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 w-full h-screen bg-white flex flex-col items-center justify-center gap-6 text-gray-800 font-medium transition-all duration-500 md:hidden
+        className={`fixed top-0 left-0 w-full h-screen bg-white flex flex-col items-center justify-center gap-6 text-gray-800 font-medium transition-all duration-500 md:hidden z-[60]
         ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
         <button

@@ -69,7 +69,7 @@ const offers = [
 
 const ExclusiveOfferCard = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-40 mb-20 px-6 md:px-16 lg:px-24">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-32 mb-20 px-6 md:px-16 lg:px-24">
       {offers.map((offer) => (
         <div key={offer.id} className="max-w-md w-full overflow-hidden rounded-2xl bg-white shadow-xl flex flex-col">
           {/* Image */}

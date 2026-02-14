@@ -8,7 +8,7 @@ function Testimonial(){
         <>
           <div className="flex flex-col items-center px-6 md:px-16 lg:px-24 bg-slate-50 pt-20 pb-30">
             <Title title="What Our Guests Say" subTitle="Hear from our happy guests who have shared their experiences about our comfortable rooms, friendly service, and pleasant stay."/>
-            <div className="flex flex-wrap items-center gap-6 mt-20">
+            <div className="flex flex-wrap items-center justify-center gap-6 mt-20">
                 {testimonials.map((testimonial) => (
                     <div key={testimonial.id} className="bg-white p-6 rounded-xl shadow max-w-xs">
                         <div className="flex items-center gap-3">

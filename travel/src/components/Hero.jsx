@@ -13,7 +13,7 @@ function Hero() {
   }
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative min-h-screen w-full">
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
@@ -28,12 +28,12 @@ function Hero() {
       <div className="absolute inset-0 bg-black/40"></div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col justify-center h-full text-white px-6 text-left">
+      <div className="relative z-10 flex flex-col md:justify-center min-h-screen text-white px-6 text-center md:text-left pt-40 pb-12">
         {/* ONE alignment container */}
-        <div className="pl-0 md:pl-12 lg:pl-24 max-w-6xl mt-[20px]">
+        <div className="flex flex-col items-center md:items-start pl-0 md:pl-12 lg:pl-24 max-w-6xl mt-[20px] w-full">
 
           {/* Badge */}
-          <p className="inline-block bg-[#49B9FF]/50 px-3.5 py-1 rounded-full mt-10">
+          <p className="inline-block bg-[#49B9FF]/50 px-3.5 py-1 rounded-full mb-4 md:mt-10">
             The Ultimate Hotel Experience
           </p>
 
@@ -48,11 +48,11 @@ function Hero() {
           </p>
 
           {/* Search Form */}
-          <form onSubmit={handleSearch} className="bg-white text-gray-500 rounded-lg px-6 py-4 mt-10 flex flex-col md:flex-row gap-4 max-w-fit">
+          <form onSubmit={handleSearch} className="bg-white text-gray-500 rounded-lg px-6 py-4 mt-10 flex flex-col md:flex-row gap-4 w-full md:w-auto max-w-4xl">
 
             {/* Destination */}
             <div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 max-md:justify-center">
                 <img src={assets.locationIcon} alt="" className="h-4" />
                 <label htmlFor="destinationInput">Destination</label>
               </div>
@@ -60,7 +60,7 @@ function Hero() {
                 list="destinations"
                 id="destinationInput"
                 type="text"
-                className="rounded border border-gray-200 px-3 py-1.5 mt-1.5 text-sm outline-none"
+                className="rounded border border-gray-200 px-3 py-1.5 mt-1.5 text-sm outline-none w-full"
                 placeholder="Type here"
                 required
               />
@@ -73,32 +73,32 @@ function Hero() {
 
             {/* Check In */}
             <div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 max-md:justify-center">
                 <img src={assets.calenderIcon} alt="" className="h-4" />
                 <label htmlFor="checkIn">Check in</label>
               </div>
               <input
                 id="checkIn"
                 type="date"
-                className="rounded border border-gray-200 px-3 py-1.5 mt-1.5 text-sm outline-none" required
+                className="rounded border border-gray-200 px-3 py-1.5 mt-1.5 text-sm outline-none w-full" required
               />
             </div>
 
             {/* Check Out */}
             <div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 max-md:justify-center">
                 <img src={assets.calenderIcon} alt="" className="h-4" />
                 <label htmlFor="checkOut">Check out</label>
               </div>
               <input
                 id="checkOut"
                 type="date"
-                className="rounded border border-gray-200 px-3 py-1.5 mt-1.5 text-sm outline-none" required
+                className="rounded border border-gray-200 px-3 py-1.5 mt-1.5 text-sm outline-none w-full" required
               />
             </div>
 
             {/* Guests */}
-            <div className="flex md:flex-col max-md:gap-2 max-md:items-center">
+            <div className="flex md:flex-col max-md:gap-2 max-md:items-center max-md:justify-center">
               <label htmlFor="guests">Guests</label>
               <input
                 min={1}

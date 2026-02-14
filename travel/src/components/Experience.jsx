@@ -30,7 +30,7 @@ const experiences = [
 export default function Experience() {
   const navigate = useNavigate();
   return (
-    <div className="min-h-screen bg-gray-50 mt-10">
+    <div className="min-h-screen bg-gray-50 pt-28">
       {/* Hero Section */}
       <section className="bg-black text-white py-20 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
